@@ -58,12 +58,33 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.6em;
-  padding: 2em;
+  border-top: 5px solid #721C49;
+  border-bottom: 5px solid #721C49;
 }
 
 h1 {
   font-size: 1.75em;
   line-height: 1.5em;
+}
+
+h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "Source Sans Pro"
+}
+
+a:link {
+    color: #9B1863;
+}
+
+a:hover, a:active {
+  color: #9B1863;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #721C49;
 }
 
 p {
@@ -73,7 +94,8 @@ p {
 
 .container {
   margin: auto;
-  max-width: 44em;
+  max-width: 44rem;
+  padding: 2em;
 }
 
 .logo {
@@ -81,5 +103,57 @@ p {
 }
 
 .logo img {
-  width: 18em;
+  width: 12em;
+}
+
+
+.social {
+    margin: .7em 1em 0 0;
+    padding: 0
+}
+
+.social__icon {
+    height: 20px;
+    width: 20px;
+    transform: scale(.8);
+    margin-right: .5em;
+    vertical-align: text-top;
+    margin-top: 2px;
+    fill: #747373
+}
+
+.social__label {
+    display: none;
+}
+
+.social__link:hover {
+    text-decoration: none;
+}
+
+.social__link:hover .social__icon {
+    fill: #323232;
+}
+
+section {
+  margin-top: 4em;
+}
+
+footer {
+  font-size: 0.7em;
+  background-color: rgb(30,30,30);
+  padding: 2em;
+}
+
+section.intro {
+}
+
+
+.grid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, [col] 100px ) ;
+  grid-template-rows: repeat(3, [row] auto  );
+  margin: auto;
+  max-width: 44rem;
+  padding: 2em;
 }
